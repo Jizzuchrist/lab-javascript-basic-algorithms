@@ -19,4 +19,14 @@ if (size1 > size2){
 }
 
 // Iteration 3: Loops
-toUpperCase()
+let driver = hacker1.toUpperCase();
+let fdriver = "";
+
+for (let i = 0; i < size1 ; i++){
+    if (size1 - 1 === i){
+        fdriver += driver[i];
+    } else{
+        fdriver += driver[i] + " ";
+    }    
+}
+console.log(fdriver);
