@@ -31,10 +31,17 @@ for (let i = 0; i < size1 ; i++){
 }
 console.log(fDriver);
 
-reverseName = "";
+let reverseName = "";
 
 for (let x = size1; x >= 0; x--){
         reverseName += hacker2[x];
 }
 console.log(reverseName);
 
+if (hacker1.localeCompare(hacker2) === -1){
+    console.log("The Driver's name goes first.")
+} else if (hacker1.localeCompare(hacker2) === 1){
+    console.log("Yo, the navigator goes first definitely")
+} else {
+    console.log("What?! You both have the same name?")
+}
