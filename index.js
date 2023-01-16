@@ -20,13 +20,21 @@ if (size1 > size2){
 
 // Iteration 3: Loops
 let driver = hacker1.toUpperCase();
-let fdriver = "";
+let fDriver = "";
 
 for (let i = 0; i < size1 ; i++){
     if (size1 - 1 === i){
-        fdriver += driver[i];
+        fDriver += driver[i];
     } else{
-        fdriver += driver[i] + " ";
+        fDriver += driver[i] + " ";
     }    
 }
-console.log(fdriver);
+console.log(fDriver);
+
+reverseName = "";
+
+for (let x = size1; x >= 0; x--){
+        reverseName += hacker2[x];
+}
+console.log(reverseName);
+
